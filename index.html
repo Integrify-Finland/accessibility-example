@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,7 +7,11 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="nav">
+    <div
+      id="nav"
+      role="navigation"
+      tabindex="0"
+      aria-label="About me and Services">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#about">About Me</a></li>
@@ -16,13 +20,13 @@
       </ul>
     </div>
 
-    <div id="header">
+    <div id="header" role="header" aria-label="Name and title">
       <h1>Anisul Islam</h1>
       Full-stack trainer
     </div>
 
-    <div id="main">
-      <div id="about">
+    <div id="main" role="main">
+      <div id="about" aria-label="main about">
         <h3>About Me</h3>
         <img src="https://i.postimg.cc/X7YkHF12/ian.jpg" height="250" />
         <p>
@@ -33,56 +37,79 @@
           qui repellat eligendi temporibus obcaecati? Iste neque dignissimos
           fugit quas amet laboriosam, suscipit iure repudiandae.
         </p>
-        <button>Learn More</button>
+        <button role="button" aria-label="Learn More">Learn More</button>
       </div>
 
-      <div id="hobby">
+      <div id="hobby" aria-label="about hobby">
         <h3>Hobbies</h3>
-        <ul>
+        <ul role="list">
           <li>Playing Football</li>
           <li>Playing Badminton</li>
           <li>Swimming</li>
         </ul>
       </div>
 
-      <div id="contact">
+      <div id="contact" aria-label="main contact">
         <h2>Contact Me</h2>
-        <form>
-          <div>
+        <form role="form">
+          <div role="form" aria-label="name">
             Name:
             <input type="text" name="name" id="name" required />
           </div>
 
-          <div>
+          <div role="form" aria-label="email">
             Email:
             <input type="email" name="email" id="email" required />
           </div>
 
-          <div>
+          <div role="form" aria-label="password">
             Password:
             <input type="password" name="password" id="password" required />
             <div>(Pasword must be at least 8 character long)</div>
           </div>
 
-          <div>
+          <div role="form" aria-label="subject">
             Subject:
             <select name="subject" id="subject">
-              <option value="web">Web development</option>
-              <option value="programming">Programming</option>
+              <option role="option" aria-label="web development" value="web">
+                Web development
+              </option>
+              <option
+                role="option"
+                aria-label="programming"
+                value="programming">
+                Programming
+              </option>
             </select>
           </div>
 
-          <div>
+          <div role="form" aria-label="choose gender">
             <span>Choose Gender:</span>
 
-            <input type="radio" id="male" name="gender" value="male" />
+            <input
+              role="radio"
+              aria-label="male"
+              type="radio"
+              id="male"
+              name="gender"
+              value="male" />
             <span>Male</span>
 
-            <input type="radio" id="female" name="gender" value="female" />
+            <input
+              role="radio"
+              aria-label="female"
+              type="radio"
+              id="female"
+              name="gender"
+              value="female" />
             <span>Female</span>
           </div>
 
-          <div>
+          <div
+            role="textbox"
+            contenteditable="true"
+            aria-placeholder="5-digit zipcode"
+            aria-labelledby="txtboxLabel">
             Message:
             <br />
             <textarea
@@ -93,20 +120,40 @@
           </div>
 
           <div>
-            <button type="submit">Register</button>
-            <button type="reset">Reset</button>
+            <button
+              role="button"
+              tabindex="0"
+              aria-label="submit"
+              type="submit">
+              Register
+            </button>
+            <button role="button" tabindex="1" aria-label="reset" type="reset">
+              Reset
+            </button>
           </div>
         </form>
       </div>
 
-      <div id="footer">
-        <a href="http://stduywithanis.com" target="_blank">Website</a>
+      <div id="footer" role="footer" aria-label="footer">
         <a
+          role="link"
+          tabindex="0"
+          href="http://stduywithanis.com"
+          target="_blank"
+          >Website</a
+        >
+        <a
+          role="link"
+          tabindex="1"
           href="https://www.youtube.com/c/anisulislamrubel/channels"
           target="_blank"
           >YouTube</a
         >
-        <a href="https://fi.linkedin.com/in/anisul2020" target="_blank"
+        <a
+          role="link"
+          tabindex="2"
+          href="https://fi.linkedin.com/in/anisul2020"
+          target="_blank"
           >LinkdIn</a
         >
         <p>Developed by Anisul Islam with &hearts;</p>
