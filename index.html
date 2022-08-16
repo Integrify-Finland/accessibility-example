@@ -1,30 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="This is a Accessibility example">
+    <meta name="author-name" content="manikumar">
+    <title>Html-Accessibility-example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
   </head>
+
+
   <body>
-    <div id="nav">
+    <!-- nav starts here -->
+    <nav>
+      <h1>Anisul Islam</h1>
+      Full-stack trainer
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#tutorial">Tutorials</a></li>
         <li><a href="#contact">Contact Me</a></li>
       </ul>
-    </div>
+    </nav>
+    <!-- nav ends here -->
 
-    <div id="header">
-      <h1>Anisul Islam</h1>
-      Full-stack trainer
-    </div>
-
-    <div id="main">
-      <div id="about">
-        <h3>About Me</h3>
-        <img src="https://i.postimg.cc/X7YkHF12/ian.jpg" height="250" />
+    <!-- header starts here -->
+    <header>
+      <h3>About Me</h3>
+        <img src="https://i.postimg.cc/X7YkHF12/ian.jpg" height="250" alt="manikumar-profile-image" title="my_image"/>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
           magnam autem reiciendis aliquid odio laboriosam optio quam earum non
@@ -33,84 +38,72 @@
           qui repellat eligendi temporibus obcaecati? Iste neque dignissimos
           fugit quas amet laboriosam, suscipit iure repudiandae.
         </p>
-        <button>Learn More</button>
-      </div>
+        <button type="submit">Learn More</button>
 
-      <div id="hobby">
+    </header>
+    <!-- header ends here -->
+
+    <!-- main starts here -->
+    <main>
+      <section>
         <h3>Hobbies</h3>
         <ul>
           <li>Playing Football</li>
           <li>Playing Badminton</li>
           <li>Swimming</li>
         </ul>
-      </div>
+      </section>
 
-      <div id="contact">
-        <h2>Contact Me</h2>
-        <form>
-          <div>
-            Name:
-            <input type="text" name="name" id="name" required />
-          </div>
-
-          <div>
-            Email:
-            <input type="email" name="email" id="email" required />
-          </div>
-
-          <div>
-            Password:
-            <input type="password" name="password" id="password" required />
-            <div>(Pasword must be at least 8 character long)</div>
-          </div>
-
-          <div>
-            Subject:
+      <section>
+          <h2>Contact Me</h2>
+          <form >
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required /> <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required /> <br>
+            <label for="Paasword">password:</label>
+            <input type="password" name="password" id="password" required /> <br>
+              (Pasword must be at least 8 character long) <br>
+            <label for="Subject">Subject:</label>  
             <select name="subject" id="subject">
               <option value="web">Web development</option>
               <option value="programming">Programming</option>
-            </select>
-          </div>
-
-          <div>
-            <span>Choose Gender:</span>
-
+            </select><br>
+            <label for="Choose Gender">Choose Gender:</label>
             <input type="radio" id="male" name="gender" value="male" />
             <span>Male</span>
-
             <input type="radio" id="female" name="gender" value="female" />
-            <span>Female</span>
-          </div>
-
-          <div>
-            Message:
-            <br />
+            <span>Female</span><br>
+            <label for="Message">Message:</label>
             <textarea
               name="message"
               id="message"
               cols="30"
-              rows="10"></textarea>
-          </div>
+              rows="10">
+            </textarea> 
+          </form> <br>
+      </section>
 
-          <div>
-            <button type="submit">Register</button>
-            <button type="reset">Reset</button>
-          </div>
-        </form>
-      </div>
+      <section>
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+      </section>
+    </main> <br>
+    <!-- main ends here -->
 
-      <div id="footer">
-        <a href="http://stduywithanis.com" target="_blank">Website</a>
-        <a
-          href="https://www.youtube.com/c/anisulislamrubel/channels"
-          target="_blank"
-          >YouTube</a
-        >
-        <a href="https://fi.linkedin.com/in/anisul2020" target="_blank"
-          >LinkdIn</a
-        >
-        <p>Developed by Anisul Islam with &hearts;</p>
-      </div>
-    </div>
+    <!-- footer starts here -->
+    <footer>
+        <a href="https://integrify.academy/international/" target="_blank" >
+          <i class="fa-brands fa-weebly"></i>
+        </a>
+        <a href="https://www.youtube.com/c/anisulislamrubel/channels" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://fi.linkedin.com/in/anisul2020" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a> <br>   
+        <p> Developed by Anisul Islam with &hearts;</p>
+    </footer>
+    <!-- footer ends here -->
   </body>
 </html>
