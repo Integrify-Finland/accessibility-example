@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,24 +7,25 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="nav">
+   <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#about">About Me</a></li>
-        <li><a href="#tutorial">Tutorials</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
         <li><a href="#contact">Contact Me</a></li>
       </ul>
-    </div>
+    </nav>
+    
 
-    <div id="header">
+    <header>
       <h1>Anisul Islam</h1>
       Full-stack trainer
-    </div>
+    </header>
 
-    <div id="main">
-      <div id="about">
-        <h3>About Me</h3>
-        <img src="https://i.postimg.cc/X7YkHF12/ian.jpg" height="250" />
+    <main>
+    <section>
+        <h2 id="about">About Me</h2>
+        <img src="https://i.postimg.cc/X7YkHF12/ian.jpg" alt="profile img" height="250" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
           magnam autem reiciendis aliquid odio laboriosam optio quam earum non
@@ -33,84 +34,74 @@
           qui repellat eligendi temporibus obcaecati? Iste neque dignissimos
           fugit quas amet laboriosam, suscipit iure repudiandae.
         </p>
-        <button>Learn More</button>
-      </div>
+        <button type="button"> Learn More</button>
+      </section>
+    
+        
+        
+      <section>
 
-      <div id="hobby">
-        <h3>Hobbies</h3>
-        <ul>
+        <h3 id="hobbies">Hobbies</h3>
+        <ul >
           <li>Playing Football</li>
           <li>Playing Badminton</li>
           <li>Swimming</li>
         </ul>
-      </div>
+        
+      </section>
+      
 
-      <div id="contact">
-        <h2>Contact Me</h2>
+      <section>
+
+        <h3 id="contact">Contact Me</h3>
         <form>
-          <div>
-            Name:
+            <label for="name">Name:</label>
             <input type="text" name="name" id="name" required />
-          </div>
-
-          <div>
-            Email:
+            <br>
+            
+            <label for="email">Email:</label>
             <input type="email" name="email" id="email" required />
-          </div>
-
-          <div>
-            Password:
+            <br>
+          
+            <label for="password">Password:</label>
             <input type="password" name="password" id="password" required />
-            <div>(Pasword must be at least 8 character long)</div>
-          </div>
-
-          <div>
-            Subject:
+            <br>
+           
+            <label for="subject">Subject:</label>
             <select name="subject" id="subject">
               <option value="web">Web development</option>
               <option value="programming">Programming</option>
             </select>
-          </div>
-
-          <div>
-            <span>Choose Gender:</span>
-
+            <br>
+            
+            <label for="">Choose Gender:</label>
             <input type="radio" id="male" name="gender" value="male" />
-            <span>Male</span>
+            <label for="male">Male</label>
 
             <input type="radio" id="female" name="gender" value="female" />
-            <span>Female</span>
-          </div>
+            <label for="female">Female</label>
+            <br>
 
-          <div>
-            Message:
-            <br />
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"></textarea>
-          </div>
-
-          <div>
-            <button type="submit">Register</button>
+            <label for="message"> Message:</label>
+            <br>
+            <textarea  name="message" id="message"  cols="30" rows="10"></textarea>
+              <br>
+              
+            <button type="submit">Submit</button>
             <button type="reset">Reset</button>
-          </div>
-        </form>
-      </div>
+          
+          </form>
+        </section>
+      </main>
 
-      <div id="footer">
+    
+
+      <footer>
         <a href="http://stduywithanis.com" target="_blank">Website</a>
-        <a
-          href="https://www.youtube.com/c/anisulislamrubel/channels"
-          target="_blank"
-          >YouTube</a
-        >
-        <a href="https://fi.linkedin.com/in/anisul2020" target="_blank"
-          >LinkdIn</a
-        >
+        <a href="https://www.youtube.com/c/anisulislamrubel/channels" target="_blank">youtube</a>
+        <a href="https://fi.linkedin.com/in/anisul2020" target="_blank">LinkdIn</a>
+       
         <p>Developed by Anisul Islam with &hearts;</p>
-      </div>
-    </div>
-  </body>
+      </footer>
+   </body>
 </html>
